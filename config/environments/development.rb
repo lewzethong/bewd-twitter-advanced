@@ -56,4 +56,8 @@ Rails.application.configure do
   config.generators do |g|
     g.test_framework nil
   end
+
+  #file attachment storage location as local in development mode
+  config.active_storage.service = :amazon
+
 end
